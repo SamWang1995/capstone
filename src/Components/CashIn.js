@@ -3,26 +3,35 @@ import {
     Table,
     TableBody,
     TableHeader,
+    TableFooter,
     TableHeaderColumn,
     TableRow,
     TableRowColumn,
   } from 'material-ui/Table';
 
 class CashIn extends Component {
+    state = {
+        showCheckboxes: false,
+        fixedFooter: true
+    };
+
     render() {
         return (
             <Table>
-                <TableHeader>
+                <TableHeader
+                    style={{backgroundColor:'#4CAF50'}}
+                    displaySelectAll={this.state.showCheckboxes}
+                    adjustForCheckbox={this.state.showCheckboxes}>
                     <TableRow>
-                        <TableHeaderColumn>Cash In</TableHeaderColumn>
-                        <TableHeaderColumn>2017</TableHeaderColumn>
-                        <TableHeaderColumn>2016</TableHeaderColumn>
-                        <TableHeaderColumn>2015</TableHeaderColumn>
-                        <TableHeaderColumn>2014</TableHeaderColumn>
-                        <TableHeaderColumn>2013</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>Cash In</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>2017</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>2016</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>2015</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>2014</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>2013</TableHeaderColumn>
                     </TableRow>
                 </TableHeader>
-                <TableBody>
+                <TableBody displayRowCheckbox={this.state.showCheckboxes}>
                     <TableRow>
                         <TableRowColumn>Cash at Beginning of Year</TableRowColumn>
                         <TableRowColumn>5,423</TableRowColumn>
@@ -38,16 +47,19 @@ class CashIn extends Component {
                         <TableRowColumn>1,566</TableRowColumn>
                         <TableRowColumn>367</TableRowColumn>
                         <TableRowColumn>865</TableRowColumn>
-                    </TableRow>
-                    <TableRow>
-                        <TableRowColumn>Increase/Decrease from Income</TableRowColumn>
-                        <TableRowColumn>5,547</TableRowColumn>
-                        <TableRowColumn>7,877</TableRowColumn>
-                        <TableRowColumn>9,700</TableRowColumn>
-                        <TableRowColumn>4,154</TableRowColumn>
-                        <TableRowColumn>3,552</TableRowColumn>
-                    </TableRow>
+                    </TableRow>                    
                 </TableBody>
+                <TableFooter
+                    style={{backgroundColor:'#FFC107', maxHeight:'10px'}}
+                    displaySelectAll={this.state.showCheckboxes}
+                    adjustForCheckbox={this.state.showCheckboxes}>
+                    <TableRowColumn style={{fontStyle:'italic'}}>Increase/Decrease from Income</TableRowColumn>
+                    <TableRowColumn>5,547</TableRowColumn>
+                    <TableRowColumn>7,877</TableRowColumn>
+                    <TableRowColumn>9,700</TableRowColumn>
+                    <TableRowColumn>4,154</TableRowColumn>
+                    <TableRowColumn>3,552</TableRowColumn>
+                </TableFooter>
             </Table>
         );
     }

@@ -17,10 +17,11 @@ class Additions extends Component {
         return (
             <Table>
                 <TableHeader
-                    
-                >
+                    style={{backgroundColor:'#EEFF41'}}
+                    displaySelectAll={this.state.showCheckboxes}
+                    adjustForCheckbox={this.state.showCheckboxes}>                >
                     <TableRow>
-                        <TableHeaderColumn>Additions</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>Additions</TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>
