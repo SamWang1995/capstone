@@ -62,6 +62,22 @@ class Decrease extends Component {
                         <TableRowColumn>0.0</TableRowColumn>
                         <TableRowColumn>0.0</TableRowColumn>
                     </TableRow>
+                        <TableRow>
+                        <TableRowColumn>Cash Increase/Decrease</TableRowColumn>
+                        <TableRowColumn>0.0</TableRowColumn>
+                        <TableRowColumn>0.0</TableRowColumn>
+                        <TableRowColumn>0.0</TableRowColumn>
+                        <TableRowColumn>0.0</TableRowColumn>
+                        <TableRowColumn>0.0</TableRowColumn>
+                    </TableRow>
+                        <TableRow>
+                        <TableRowColumn>Cash at End of the Year</TableRowColumn>
+                        <TableRowColumn>0.0</TableRowColumn>
+                        <TableRowColumn>0.0</TableRowColumn>
+                        <TableRowColumn>0.0</TableRowColumn>
+                        <TableRowColumn>0.0</TableRowColumn>
+                        <TableRowColumn>0.0</TableRowColumn>
+                    </TableRow>
                 </TableBody>
             </Table>
         );
