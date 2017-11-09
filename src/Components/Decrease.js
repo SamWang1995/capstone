@@ -9,12 +9,19 @@ import {
   } from 'material-ui/Table';
 
 class Decrease extends Component {
+    state = {
+        showCheckboxes: false
+    };
+
     render() {
         return (
             <Table>
-                <TableHeader>
+                <TableHeader
+                style={{backgroundColor:'#FF1744'}}
+                    displaySelectAll={this.state.showCheckboxes}
+                    adjustForCheckbox={this.state.showCheckboxes}>
                     <TableRow>
-                        <TableHeaderColumn>Decrease</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>Decrease</TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>
@@ -22,7 +29,7 @@ class Decrease extends Component {
                         <TableHeaderColumn></TableHeaderColumn>
                     </TableRow>
                 </TableHeader>
-                <TableBody>
+                <TableBody displayRowCheckbox={this.state.showCheckboxes}>
                     <TableRow>
                         <TableRowColumn>Principal Paid</TableRowColumn>
                         <TableRowColumn>0.0</TableRowColumn>
