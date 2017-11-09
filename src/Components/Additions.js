@@ -12,16 +12,16 @@ class Additions extends Component {
     state = {
         showCheckboxes: false
     };
-    
+
     render() {
         return (
             <Table>
                 <TableHeader
-                    style={{backgroundColor:'#EEFF41'}}
+                    style={{backgroundColor:'#81D4FA'}}
                     displaySelectAll={this.state.showCheckboxes}
                     adjustForCheckbox={this.state.showCheckboxes}>                >
                     <TableRow>
-                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>Additions</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#FFF', fontSize:'20px', fontFamily:'Helvetica', fontWeight:'lighter'}}>Additions</TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>

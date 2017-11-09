@@ -17,11 +17,11 @@ class Decrease extends Component {
         return (
             <Table>
                 <TableHeader
-                style={{backgroundColor:'#FF1744'}}
+                style={{backgroundColor:'#81D4FA'}}
                     displaySelectAll={this.state.showCheckboxes}
                     adjustForCheckbox={this.state.showCheckboxes}>
                     <TableRow>
-                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>Decrease</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#FFF', fontSize:'20px', fontFamily:'Helvetica', fontWeight:'lighter'}}>Decrease</TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>
                         <TableHeaderColumn></TableHeaderColumn>

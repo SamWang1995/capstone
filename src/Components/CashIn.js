@@ -19,16 +19,16 @@ class CashIn extends Component {
         return (
             <Table>
                 <TableHeader
-                    style={{backgroundColor:'#4CAF50'}}
+                    style={{backgroundColor:'#81D4FA'}}
                     displaySelectAll={this.state.showCheckboxes}
                     adjustForCheckbox={this.state.showCheckboxes}>
                     <TableRow>
-                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>Cash In</TableHeaderColumn>
-                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>2017</TableHeaderColumn>
-                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>2016</TableHeaderColumn>
-                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>2015</TableHeaderColumn>
-                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>2014</TableHeaderColumn>
-                        <TableHeaderColumn style={{color:'#000', fontSize:'30px'}}>2013</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#FFF', fontSize:'20px', fontFamily:'Helvetica', fontWeight:'lighter'}}>Cash In</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#FFF', fontSize:'20px', fontFamily:'Helvetica', fontWeight:'lighter'}}>2017</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#FFF', fontSize:'20px', fontFamily:'Helvetica', fontWeight:'lighter'}}>2016</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#FFF', fontSize:'20px', fontFamily:'Helvetica', fontWeight:'lighter'}}>2015</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#FFF', fontSize:'20px', fontFamily:'Helvetica', fontWeight:'lighter'}}>2014</TableHeaderColumn>
+                        <TableHeaderColumn style={{color:'#FFF', fontSize:'20px', fontFamily:'Helvetica', fontWeight:'lighter'}}>2013</TableHeaderColumn>
                     </TableRow>
                 </TableHeader>
                 <TableBody displayRowCheckbox={this.state.showCheckboxes}>
@@ -47,10 +47,10 @@ class CashIn extends Component {
                         <TableRowColumn>1,566</TableRowColumn>
                         <TableRowColumn>367</TableRowColumn>
                         <TableRowColumn>865</TableRowColumn>
-                    </TableRow>                    
+                    </TableRow>
                 </TableBody>
                 <TableFooter
-                    style={{backgroundColor:'#FFC107', maxHeight:'10px'}}
+                    style={{backgroundColor:'#FFF', maxHeight:'10px'}}
                     displaySelectAll={this.state.showCheckboxes}
                     adjustForCheckbox={this.state.showCheckboxes}>
                     <TableRowColumn style={{fontStyle:'italic'}}>Increase/Decrease from Income</TableRowColumn>
