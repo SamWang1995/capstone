@@ -5,10 +5,10 @@ import * as Colors from 'material-ui/styles/colors';
 class HeaderBar extends Component {
     render() {
         return (
-            <AppBar                
-                style={{backgroundColor:'#76FF03', textAlign:'center'}}
-                titleStyle={{color:'#000', fontSize:'35px'}}
-                title="Cash Flow Statement"           
+            <AppBar
+                style={{backgroundColor:'#03A9F4', textAlign:'center'}}
+                titleStyle={{color:'#FFF', fontSize:'35px', fontFamily:'Helvetica', fontWeight:'lighter'}}
+                title="Cash Flow Statement"
             />
         );
     }
