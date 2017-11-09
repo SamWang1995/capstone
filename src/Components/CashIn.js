@@ -50,10 +50,10 @@ class CashIn extends Component {
                     </TableRow>
                 </TableBody>
                 <TableFooter
-                    style={{backgroundColor:'#FFF', maxHeight:'10px'}}
+                    style={{backgroundColor:'#FFF', maxHeight:'10px', fontWeight:'bold'}}
                     displaySelectAll={this.state.showCheckboxes}
                     adjustForCheckbox={this.state.showCheckboxes}>
-                    <TableRowColumn style={{fontStyle:'italic'}}>Increase/Decrease from Income</TableRowColumn>
+                    <TableRowColumn>Increase/Decrease from Income</TableRowColumn>
                     <TableRowColumn>5,547</TableRowColumn>
                     <TableRowColumn>7,877</TableRowColumn>
                     <TableRowColumn>9,700</TableRowColumn>
