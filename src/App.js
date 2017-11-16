@@ -1,24 +1,27 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import HeaderBar from './Components/HeaderBar';
-import CashIn from './Components/CashIn';
-import Additions from './Components/Additions';
-import Decrease from './Components/Decrease';
+import MainCash from './Components/MainCash';
+import MainBalance from './Components/MainBalance'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {
+  BrowserRouter as Router, 
+  Switch,
+  Route
+} from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <HeaderBar />
-        <br /><br /><br />
-        <CashIn />
-        <br /><br /><br />
-        <Additions />
-        <br /><br /><br />
-        <Decrease />
-        <br />
+        <div className = "row">
+          <Router>
+            <Switch>
+              <Route path = "/MainCash" component = {MainCash}/>
+              <Route path = "/MainBalance" component = {MainBalance}/>
+            </Switch>
+          </Router>
+        </div>
       </MuiThemeProvider>
     );
   }
