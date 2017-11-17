@@ -4,7 +4,8 @@ import { Nav, NavItem, NavLink } from 'reactstrap';
 import './App.css';
 import Home from './Components/Home';
 import MainCash from './Components/MainCash';
-import MainBalance from './Components/MainBalance'
+import MainBalance from './Components/MainBalance';
+import MainIncome from './Components/MainIncome';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {
   BrowserRouter as Router, 
@@ -21,6 +22,7 @@ class App extends Component {
             <li><NavLink href="/">Home</NavLink></li>
             <li><NavLink href="/MainCash">MainCash</NavLink></li>
             <li><NavLink href="/MainBalance">MainBalance</NavLink></li>
+            <li><NavLink href="/MainIncome">MainIncome</NavLink></li>
           </ul>
         </nav>
         <div className = "row">
@@ -29,6 +31,7 @@ class App extends Component {
               <Route path = "/" exact component = {Home}/>
               <Route path = "/MainCash" component = {MainCash}/>
               <Route path = "/MainBalance" component = {MainBalance}/>
+              <Route path = "/MainIncome" component = {MainIncome}/>
             </Switch>
           </Router>
         </div>
