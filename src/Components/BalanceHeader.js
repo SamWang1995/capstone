@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
-import * as Colors from 'material-ui/styles/colors';
+//import * as Colors from 'material-ui/styles/colors';
 
 class HeaderBar extends Component {
     render() {

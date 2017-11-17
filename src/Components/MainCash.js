@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import HeaderBar from '/Users/bettyjing/Documents/GitHub/capstone/src/Components/HeaderBar';
-import CashIn from '/Users/bettyjing/Documents/GitHub/capstone/src/Components/CashIn';
-import Additions from '/Users/bettyjing/Documents/GitHub/capstone/src/Components/Additions';
-import Decrease from '/Users/bettyjing/Documents/GitHub/capstone/src/Components/Decrease';
+import HeaderBar from './HeaderBar';
+import CashIn from './CashIn';
+import Additions from './Additions';
+import Decrease from './Decrease';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {
-    Table,
-    TableBody,
-    TableHeader,
-    TableHeaderColumn,
-    TableRow,
-    TableRowColumn,
-  } from 'material-ui/Table';
+//import {
+//    Table,
+//    TableBody,
+//    TableHeader,
+//    TableHeaderColumn,
+//    TableRow,
+//    TableRowColumn,
+//  } from 'material-ui/Table';
 
  class MainCash extends Component{
  	state = {
