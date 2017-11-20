@@ -8,7 +8,7 @@ import MainBalance from './Components/MainBalance';
 import MainIncome from './Components/MainIncome';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {
-  BrowserRouter as Router, 
+  BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom'
@@ -17,14 +17,15 @@ class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
+
+        <div class="topnav" id="myTopnav">
         <nav>
-          <ul>
-            <li><NavLink href="/">Home</NavLink></li>
-            <li><NavLink href="/MainCash">MainCash</NavLink></li>
-            <li><NavLink href="/MainBalance">MainBalance</NavLink></li>
-            <li><NavLink href="/MainIncome">MainIncome</NavLink></li>
-          </ul>
+            <NavLink href="/">Home</NavLink>
+            <NavLink href="/MainCash">Cash Flow</NavLink>
+            <NavLink href="/MainBalance">Balance</NavLink>
+            <NavLink href="/MainIncome">Income</NavLink>
         </nav>
+          </div>
         <div className = "row">
           <Router>
             <Switch>
