@@ -3,7 +3,7 @@ import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 
-class IncomeHeader extends Component {
+class MainCashHeader extends Component {
     constructor(props) {
         super(props);
         this.state = {open: false};
@@ -16,9 +16,9 @@ class IncomeHeader extends Component {
         return (
             <div>
                 <AppBar
-                    style={{backgroundColor:'#00796B', textAlign:'center'}}
+                    style={{backgroundColor:'#03A9F4', textAlign:'center'}}
                     titleStyle={{color:'#FFF', fontSize:'35px', fontFamily:'Helvetica', fontWeight:'lighter'}}
-                    title="Income Statement"
+                    title="Cash Flow Statement"
                     onLeftIconButtonTouchTap={this.handleToggle}
                 />
 
@@ -34,4 +34,4 @@ class IncomeHeader extends Component {
     }
 }
 
-export default IncomeHeader;
+export default MainCashHeader;

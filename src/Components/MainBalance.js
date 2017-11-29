@@ -5,14 +5,6 @@ import BalanceFixedAssets from './BalanceFixedAssets';
 import BalanceLongTerm from './BalanceLongTerm';
 import BalanceOwnerEquity from './BalanceOwnerEquity'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-//import {
-//    Table,
-//    TableBody,
-//    TableHeader,
-//    TableHeaderColumn,
-//    TableRow,
-//    TableRowColumn,
-//  } from 'material-ui/Table';
 
  class MainBalance extends Component{
  	state = {

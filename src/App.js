@@ -19,13 +19,13 @@ class App extends Component {
       <MuiThemeProvider>
 
         <div class="topnav" id="myTopnav">
-        <nav>
-            <NavLink href="/">Home</NavLink>
-            <NavLink href="/MainCash">Cash Flow</NavLink>
-            <NavLink href="/MainBalance">Balance</NavLink>
-            <NavLink href="/MainIncome">Income</NavLink>
-        </nav>
-          </div>
+          <nav>
+              <NavLink href="/">Home</NavLink>
+              <NavLink href="/MainCash">Cash Flow</NavLink>
+              <NavLink href="/MainBalance">Balance</NavLink>
+              <NavLink href="/MainIncome">Income</NavLink>
+          </nav>
+        </div>
         <div className = "row">
           <Router>
             <Switch>

@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
-import HeaderBar from './HeaderBar';
+import MainCashHeader from './MainCashHeader';
 import CashIn from './CashIn';
 import Additions from './Additions';
 import Decrease from './Decrease';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-//import {
-//    Table,
-//    TableBody,
-//    TableHeader,
-//    TableHeaderColumn,
-//    TableRow,
-//    TableRowColumn,
-//  } from 'material-ui/Table';
 
  class MainCash extends Component{
  	state = {
@@ -20,7 +12,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
  	render(){
  		return (
 	 		<MuiThemeProvider>
-	        <HeaderBar />
+	        <MainCashHeader />
 	        <br /><br /><br />
 	        <CashIn />
 	        <br /><br /><br />

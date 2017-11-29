@@ -19,7 +19,7 @@ import {
         return (
             <Table>
                 <TableHeader
-                    style={{backgroundColor:'#81D4FA'}}
+                    style={{backgroundColor:'#4DB6AC'}}
                     displaySelectAll={this.state.showCheckboxes}
                     adjustForCheckbox={this.state.showCheckboxes}>
                     <TableRow>
