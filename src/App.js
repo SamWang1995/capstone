@@ -1,24 +1,41 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Nav, NavItem, NavLink } from 'reactstrap';
+//import logo from './logo.svg';
 import './App.css';
-import HeaderBar from './Components/HeaderBar';
-import CashIn from './Components/CashIn';
-import Additions from './Components/Additions';
-import Decrease from './Components/Decrease';
+import Home from './Components/Home';
+import MainCash from './Components/MainCash';
+import MainBalance from './Components/MainBalance';
+import MainIncome from './Components/MainIncome';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom'
 
 class App extends Component {
   render() {
     return (
       <MuiThemeProvider>
-        <HeaderBar />
-        <br /><br /><br />
-        <CashIn />
-        <br /><br /><br />
-        <Additions />
-        <br /><br /><br />
-        <Decrease />
-        <br />
+
+        <div class="topnav" id="myTopnav">
+          <nav>
+              <NavLink href="/">Home</NavLink>
+              <NavLink href="/MainCash">Cash Flow</NavLink>
+              <NavLink href="/MainBalance">Balance</NavLink>
+              <NavLink href="/MainIncome">Income</NavLink>
+          </nav>
+        </div>
+        <div className = "row">
+          <Router>
+            <Switch>
+              <Route path = "/" exact component = {Home}/>
+              <Route path = "/MainCash" component = {MainCash}/>
+              <Route path = "/MainBalance" component = {MainBalance}/>
+              <Route path = "/MainIncome" component = {MainIncome}/>
+            </Switch>
+          </Router>
+        </div>
       </MuiThemeProvider>
     );
   }

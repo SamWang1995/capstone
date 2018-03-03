@@ -62,7 +62,7 @@ class Decrease extends Component {
                         <TableRowColumn>0.0</TableRowColumn>
                         <TableRowColumn>0.0</TableRowColumn>
                     </TableRow>
-                        <TableRow>
+                        <TableRow style={{fontWeight:'bold'}}>
                         <TableRowColumn>Cash Increase/Decrease</TableRowColumn>
                         <TableRowColumn>0.0</TableRowColumn>
                         <TableRowColumn>0.0</TableRowColumn>
@@ -70,7 +70,7 @@ class Decrease extends Component {
                         <TableRowColumn>0.0</TableRowColumn>
                         <TableRowColumn>0.0</TableRowColumn>
                     </TableRow>
-                        <TableRow>
+                        <TableRow style={{fontWeight:'bold'}}>
                         <TableRowColumn>Cash at End of the Year</TableRowColumn>
                         <TableRowColumn>0.0</TableRowColumn>
                         <TableRowColumn>0.0</TableRowColumn>
